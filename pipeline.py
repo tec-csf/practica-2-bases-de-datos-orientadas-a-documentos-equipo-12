@@ -96,5 +96,5 @@ db.Bicicleta.aggregate([
 
     { $match :{ "color":"Amarillo"}},
           {$group: { _id: "$FechaCreacion", total:{ $sum: "$color" }}},
-          {$sort:{toral: -1 }}
+          {$sort:{total: -1 }}
 ])
